@@ -1,0 +1,66 @@
+.hero {
+  &__inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+    padding-top: 110px;
+  };
+
+  &__slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: filter 0.4s linear;
+
+      &:hover:nth-child(n) {
+        filter: grayscale(0);
+      };
+
+      &:nth-child(1) {
+        background: url("../../images/product1.png");
+      };
+
+      &:nth-child(2) {
+        background: url("../../images/product2.png");
+      };
+
+      &:nth-child(3) {
+        background: url("../../images/product3.png");
+      };
+
+      &:nth-child(4) {
+        background: url("../../images/product4.png");
+      };
+  };
+
+  &__slide-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 500px;
+    min-height: 500px;
+    margin-left: 15%;
+  };
+
+  &__head {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__btn {
+    padding: 12px 40px;
+  } 
+};

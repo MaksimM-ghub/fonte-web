@@ -1,0 +1,119 @@
+.product {
+  background: #1c1c1c;
+  padding: 120px 0;
+
+  &__title {
+  margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1040px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    transition: all 0.4s linear;
+  }
+
+  &__img-1 {
+    background: url("../../images/product1.png");
+    filter: grayscale(1);
+  }
+
+  &__img-2 {
+    background: url("../../images/product2.png");
+    filter: grayscale(1);
+ }
+
+  &__img-3 {
+    background: url("../../images/product3.png");
+    filter: grayscale(1);
+  }
+
+  &__img-4 {
+    background: url("../../images/product4.png");
+    filter: grayscale(1);
+  }
+
+  &__img-5 {
+    background: url("../../images/product5.png");
+    filter: grayscale(1);
+  }
+
+  &__block {
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 37px 20px 10px 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 570px;
+    min-height: 250px;
+    background: linear-gradient(
+      90deg,
+      #434148 10%,
+      #434148 3.36%,
+      rgba(67, 65, 72, 0.8) 40.27%,
+      rgba(67, 65, 72, 0.53) 75.36%,
+      rgba(34, 33, 37, 0.27) 100.62%,
+      rgba(0, 0, 0, 0) 100.25%
+    );
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    filter: contrast(1);
+  }
+
+    &__subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__link {
+    max-width: 160px;
+    min-height: 40px;
+    padding: 10px 40px;
+    background: var(--orange-color);
+    color: white;
+    text-align: center;
+    color: #fff;
+    font-family: Gogh;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s linear;
+  }
+
+}
+
+.product__item:hover .product__block {
+  filter: contrast(1);
+}
+
+.product__item:hover .product__link {
+  border: 1px solid #f60;
+  background: rgba(255, 102, 0, 0.4);
+  box-shadow: 0px 0px 40px 0px rgba(255, 102, 0, 0.25);
+}

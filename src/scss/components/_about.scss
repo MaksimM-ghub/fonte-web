@@ -1,0 +1,66 @@
+.about {
+    position: relative;
+    padding-bottom: 80px;
+    background: url("../../images/line.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 70%;
+
+    &__wrapper {
+      padding: 75px 0 71px 70px;
+    };
+
+    &__title {
+      margin-bottom: 33px;
+    };
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 350px;
+      background: url("../../images/about-img.jpg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    };
+
+    &__text {
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 140%;
+    };
+
+    &__link {
+      padding: 12px 28px 12px 55px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      border: 1.5px solid var(--orange-color);
+      outline: none;
+      background: var(--bg-btn);
+      box-shadow: 0px 0px 50px 0px var(--shadow-btn);
+      background-image: url("../../images/license-img.png");
+      background-repeat: no-repeat;
+      background-position: left 28px center;
+      background-size: 17px 20px;
+      transition: background 0.4s linear;
+
+      &:focus {
+        outline-offset: 2px;
+        outline: 2px solid var(--orange-color);
+      }
+
+      &:hover {
+        background-color: var(--orange-color);
+      }
+
+      &:active {
+        background: var(--shadow-btn);
+      }
+    }
+
+}

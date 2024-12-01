@@ -1,0 +1,76 @@
+.feedback {
+  background: var(--form--bg);
+
+  &__wrapper {
+    padding: 50px 0;
+    padding-right: 350px;
+    padding-left: 160px;
+    background: url("../../images/form-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: var(--bg-color);
+    transition: background 0.4s linear, outline 0.2s linear;
+
+    &:focus {
+      outline: 2px solid var(--orange-color);
+    }
+
+    &:hover {
+      outline: 2px solid var(--orange-color);
+      background: rgba(255, 102, 0, 0.1);
+    }
+
+    &::placeholder {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: var(--bg-color);
+    resize: none;
+    transition: background 0.4s linear, outline 0.2s linear;
+
+    &:focus {
+      outline: 2px solid var(--orange-color);
+    }
+
+    &:hover {
+      outline: 2px solid var(--orange-color);
+      background: rgba(255, 102, 0, 0.1);
+    }
+
+    &::placeholder {
+      color: var(--values-color);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 17px 33.5px 16px 33.5px;
+  }
+}

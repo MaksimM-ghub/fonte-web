@@ -1,0 +1,21 @@
+
+:root {
+  --content-width: 1310px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Gogh", sans-serif;
+  --third-family: "Gilroy", sans-serif;
+  --main-color: #fff;
+  --orange-color: #f60;
+  --bg-btn: rgba(255, 102, 0, 0.4);
+  --shadow-btn: rgba(255, 102, 0, 0.45);
+  --lightorange--color: rgb(242, 144, 79);
+  --bg-color: #141414;
+  --values-color: rgba(255, 255, 255, 0.5);
+  --form--bg: #0a0a0a;
+  --values-gap: 75px;
+  --team-gap: 42px;
+}

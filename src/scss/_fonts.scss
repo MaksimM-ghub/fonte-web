@@ -1,0 +1,9 @@
+@use './mixins/font-face' as font;
+
+@include font.font-face("Gogh", "../fonts/Gogh-Bold", 700, normal);
+@include font.font-face("Gogh", "../fonts/Gogh-Medium", 500, normal);
+@include font.font-face("Gogh", "../fonts/Gogh-Regular", 400, normal);
+@include font.font-face("Montserrat", "../fonts/Montserrat-Bold", 700, normal);
+@include font.font-face("Montserrat", "../fonts/Montserrat-Medium", 500, normal);
+@include font.font-face("Montserrat", "../fonts/Montserrat-Regular", 400, normal);
+@include font.font-face("Montserrat", "../fonts/Montserrat-SemiBold", 600, normal);

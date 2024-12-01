@@ -1,0 +1,114 @@
+.contacts {
+  padding: 150px 0;
+  background: #1c1c1c;
+
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55%;
+    font-style: normal;
+  }
+
+  &__phone-link,
+  &__mail-link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 50px;
+    color: var(--orange-color);
+  }
+
+  &__phone,
+  &__mail,
+  &__address {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  &__map {
+    display: flex;
+    gap: 50px;
+    max-width: 1140px;
+    min-height: 300px;
+  }
+
+  &__map-astana {
+    width: 48%;
+    height: 300px;
+    transition: filter 0.4s linear;
+
+    &:hover [class*="ground-pane"] {
+      filter: contrast(1);
+    }
+  }
+
+  &__map-almaty {
+    width: 48%;
+    height: 300px;
+    transition: filter 0.4s linear;
+
+    &:hover [class*="ground-pane"] {
+      filter: contrast(1);
+    }
+  }
+
+  &__jur-address {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 40%;
+  }
+
+  &__input {
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    background: #141414;
+    color: white;
+    transition: all 0.4s linear;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &:hover::placeholder {
+      color: white;
+    }
+  }
+
+  &__btn {
+    width: 80%;
+    height: 50px;
+  }
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}

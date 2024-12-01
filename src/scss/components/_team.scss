@@ -1,0 +1,50 @@
+.team {
+  background: url("../../images/team-line.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 65%;
+
+  &__wrapper {
+    padding: 53px 76px 80px 70px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__desc {
+    width: 68%;
+    margin: 0;
+    margin-bottom: 80px;
+    color: var(--values-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    --offsets: 5;
+    gap: 42px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - (var(--offsets) * var(--team-gap))) - (var(--offsets) + 1));
+  }
+
+  &__name-peaple {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__prof {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

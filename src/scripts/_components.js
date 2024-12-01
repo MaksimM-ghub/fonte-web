@@ -1,0 +1,6 @@
+import './components/anchors.js'
+import './components/header-scroll.js'
+import './components/swiper.js'
+import './components/burger.js'
+import './components/map-astana.js'
+import './components/map-almaty.js'

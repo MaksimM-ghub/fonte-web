@@ -1,0 +1,69 @@
+.values {
+  &__wrapper {
+    padding: 75px 0 71px 70px;
+  }
+
+  &__title {
+    margin-bottom: 63px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    --offsets: 1;
+    column-gap: 75px;
+    row-gap: 96px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc((100% - (var(--values-gap) * var(--offsets))) / (var(--offsets) + 1));
+    padding-left: 80px;
+  }
+
+  &__item-img1 {
+    background: url("../../images/values1.svg");
+    background-repeat: no-repeat;
+    background-position: top -50px left -50px;
+    background-size: auto;
+  }
+
+  &__item-img2 {
+    background: url("../../images/values2.svg");
+    background-repeat: no-repeat;
+    background-position: top -50px left -50px;
+    background-size: auto;
+  }
+
+  &__item-img3 {
+    background: url("../../images/values3.svg");
+    background-repeat: no-repeat;
+    background-position: top -50px left -50px;
+    background-size: auto;
+  }
+
+  &__item-img4 {
+    background: url("../../images/values4.svg");
+    background-repeat: no-repeat;
+    background-position: top -50px left -50px;
+    background-size: auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--values-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}

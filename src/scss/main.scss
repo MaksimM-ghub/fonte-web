@@ -1,0 +1,25 @@
+// базовые подключения
+@use "vars";
+@use "mixins";
+@use "fonts";
+@use "global";
+
+// подключения компонентов страницы
+@use "./components/header";
+@use "./components/nav";
+@use "./components/burger";
+@use "./components/hero";
+@use "./components/slider";
+@use "./components/about";
+@use "./components/values";
+@use "./components/team";
+@use "./components/partners";
+@use "./components/blog";
+@use "./components/feedback";
+@use "./components/footer";
+@use "./components/modal";
+@use "./components/blog-page";
+@use "./components/contacts";
+@use "./components/products";
+@use "./media";
+

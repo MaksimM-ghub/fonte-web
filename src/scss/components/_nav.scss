@@ -1,0 +1,47 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    transition: color 0.4s linear;
+
+    &:focus {
+      outline-offset: 2px;
+      outline: 1px solid var(--orange-color);
+    }
+
+    &:hover {
+      color: var(--orange-color);
+    }
+
+    &:active {
+      outline: none;
+      color: var(--shadow-btn);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--shadow-btn);
+      opacity: 0;
+      transition: opacity 0.4s linear;
+    }
+
+    &:active::after {
+      opacity: 1;
+    }
+  }
+}
